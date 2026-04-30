@@ -86,11 +86,3 @@ Demo login after deploy:
 
 - Email: `demo@example.com`
 - Password: `password123`
-
-## Good next steps
-
-- Add user login
-- Replace JSON storage with SQLite or PostgreSQL
-- Add task editing
-- Add drag and drop
-- Add board permissions
