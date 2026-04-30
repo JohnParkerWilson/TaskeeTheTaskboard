@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Taskee</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="auth-page">
+      <section class="auth-card">
+        <p class="eyebrow">Beginner auth flow</p>
+        <h1 class="auth-title">Sign in to your task board</h1>
+        <p class="auth-copy">
+          Use the demo account or create your own account with the form below.
+        </p>
+
+        <div class="demo-box">
+          <strong>Demo login</strong>
+          <p>Email: <code>demo@example.com</code></p>
+          <p>Password: <code>password123</code></p>
+        </div>
+
+        <div class="auth-tabs">
+          <button id="show-login" class="secondary-button active-tab" type="button">Login</button>
+          <button id="show-register" class="secondary-button" type="button">Create account</button>
+        </div>
+
+        <p id="auth-error" class="error-message hidden"></p>
+
+        <form id="login-form" class="auth-form">
+          <input name="email" type="email" placeholder="Email" maxlength="120" required />
+          <input name="password" type="password" placeholder="Password" minlength="8" maxlength="128" required />
+          <button type="submit">Log in</button>
+        </form>
+
+        <form id="register-form" class="auth-form hidden">
+          <input name="name" type="text" placeholder="Your name" maxlength="60" required />
+          <input name="email" type="email" placeholder="Email" maxlength="120" required />
+          <input name="password" type="password" placeholder="Password" minlength="8" maxlength="128" required />
+          <button type="submit">Create account</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="/login.js"></script>
+  </body>
+</html>

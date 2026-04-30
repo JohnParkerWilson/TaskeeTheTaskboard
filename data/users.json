@@ -1,0 +1,8 @@
+[
+  {
+    "id": "demo-user",
+    "name": "Demo User",
+    "email": "demo@example.com",
+    "passwordHash": "0a0ff6399c94e08c9b8b4192adcde976:afe8a6e6b1220d59cf09750180c63ff268a45baa5afd8d508662d8d9c8cc31e26deabcb8a7666793c6541b39d4971cd9b6fe7d7777988096012d946f33d41208"
+  }
+]

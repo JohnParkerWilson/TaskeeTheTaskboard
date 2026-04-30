@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taskee</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Node.js + JavaScript starter</p>
+          <h1>Taskee Task Board</h1>
+          <p class="subcopy">
+            A simple Kanban board with a real backend, JSON storage, and vanilla
+            JavaScript on the frontend.
+          </p>
+        </div>
+        <div class="user-bar">
+          <p id="welcome-message" class="welcome-message"></p>
+          <button id="logout-button" class="secondary-button" type="button">Log out</button>
+        </div>
+      </header>
+
+      <section class="panel">
+        <p id="board-feedback" class="feedback-message hidden" role="status" aria-live="polite"></p>
+        <form id="column-form" class="inline-form">
+          <input id="column-title" name="title" type="text" placeholder="New column title" maxlength="40" required />
+          <button type="submit">Add column</button>
+        </form>
+      </section>
+
+      <section id="board" class="board"></section>
+    </main>
+
+    <template id="task-form-template">
+      <form class="task-form">
+        <input name="title" type="text" placeholder="Task title" maxlength="80" required />
+        <textarea name="description" rows="3" placeholder="Short description" maxlength="400"></textarea>
+        <button type="submit">Add task</button>
+      </form>
+    </template>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

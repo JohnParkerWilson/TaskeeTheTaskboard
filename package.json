@@ -1,0 +1,10 @@
+{
+  "name": "task-board-node-js",
+  "version": "1.0.0",
+  "description": "Beginner-friendly task board built with Node.js and plain JavaScript.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "MIT"
+}

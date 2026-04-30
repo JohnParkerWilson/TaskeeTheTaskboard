@@ -1,0 +1,30 @@
+{
+  "boardName": "My First Task Board",
+  "columns": [
+    {
+      "id": "todo",
+      "title": "To Do",
+      "tasks": []
+    },
+    {
+      "id": "doing",
+      "title": "Doing",
+      "tasks": []
+    },
+    {
+      "id": "done",
+      "title": "Done",
+      "tasks": []
+    },
+    {
+      "id": "3daae1c4-f361-4858-8a75-231f956f02dd",
+      "title": "Planned",
+      "tasks": []
+    },
+    {
+      "id": "33e910b1-6f97-4271-af93-5d18ff4c2e45",
+      "title": "temp colon",
+      "tasks": []
+    }
+  ]
+}
