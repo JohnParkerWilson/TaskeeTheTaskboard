@@ -1,6 +1,6 @@
 # Beginner Task Board
 
-This is a beginner-friendly web app built with Node.js, plain JavaScript, and SQLite.
+This is a clean organizational productivity tool web app built with Node.js, plain JavaScript, and SQLite.
 
 ## What it includes
 
@@ -11,38 +11,16 @@ This is a beginner-friendly web app built with Node.js, plain JavaScript, and SQ
 - A vanilla JavaScript frontend
 - A one-time migration path from the older JSON files into `data/app.db`
 
-## Run it
+## Where to find it and how to run it
+
+Here's the link to the app:
+
+https://taskeethetaskboard.onrender.com/
+
+
+If you want to run it locally:
 
 ```powershell
-.\start-app.ps1
-```
-
-If PowerShell blocks the script, use:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\start-app.ps1
-```
-
-You can also use:
-
-```bat
-start-app.cmd
-```
-
-Then open `http://127.0.0.1:3000`.
-
-You can also set:
-
-```powershell
-$env:HOST="0.0.0.0"
-$env:PORT="3000"
-node server.js
-```
-
-If you want the SQLite database somewhere else, set:
-
-```powershell
-$env:DATA_DIR="C:\\some\\persistent\\folder"
 node server.js
 ```
 
@@ -74,13 +52,6 @@ node server.js
 - The app exposes `GET /health` for Render health checks.
 - On Render, SQLite will live at `/var/data/app.db` because `DATA_DIR=/var/data` is set in `render.yaml`.
 - The first startup can still import the starter board and demo user from the repo's `data/*.json` files, even when the live database is stored on the mounted disk.
-
-Typical Render flow:
-
-1. Push this repo to GitHub.
-2. In Render, create a new Blueprint or Web Service from the repo.
-3. Make sure the persistent disk is attached at `/var/data`.
-4. Deploy and open `/login`.
 
 Demo login after deploy:
 
